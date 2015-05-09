@@ -12,11 +12,7 @@ baseurl:
 collections:
   projects:
     output: false
-  culture:
-    output: false
   team:
-    output: false
-  press:
     output: false
 
 permalink: pretty
