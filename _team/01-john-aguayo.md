@@ -1,7 +1,7 @@
 ---
 name: John Aguayo
 job: Systems Software Developer
-img:
+img: john.jpeg
 homepage:
 email: jjaguayo@stanford.edu
 ---
