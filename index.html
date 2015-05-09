@@ -27,22 +27,22 @@ carousel:
   </ol>
   <div class="carousel-inner" role="listbox">
     {% for item in page.carousel %}
-    <div class="item {{ item.img }}{% if forloop.index0 == 0 %} active{% end    if %}">
+    <div class="item {{ item.img }}{% if forloop.index0 == 0 %} active{% endif %}">
       <div class="container">
         <div class="carousel-caption">
           <h1>{{ item.title }}</h1>
           <p>{{ item.text }}</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/{{ i    tem.url }}" role="button">{{ item.button }}</a></p>
+          <p><a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/{{ item.url }}" role="button">{{ item.button }}</a></p>
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
-  <a class="left carousel-control" href="#index-carousel" role="button" data    -slide="prev">
+  <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#index-carousel" role="button" dat    a-slide="next">
+  <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
