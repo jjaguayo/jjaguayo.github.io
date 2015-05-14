@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container main events">
+  {% for event in site.events %}
+  <div class="row">
+    <div class="col-md-8">
+      <h2>{{ event.name }}</h2>
+      <button class="btn btn-default" data-toggle="collapse" data-target="#{{ event.name | slugify }}">Agenda <span class="caret"></span></button>
+      <div class="collapse" id="{{ event.name | slugify }}">
+        {{ event.content }}
+      </div>
+    </div>
+  </div>
+  <hr>
+  {% endfor %}
+</div>

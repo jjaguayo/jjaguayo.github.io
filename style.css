@@ -7,5 +7,6 @@ layout: null
 {% include css/blog.css %}
 {% include css/culture.css %}
 {% include css/projects.css %}
+{% include css/events.css %}
 {% include css/team.css %}
 {% include css/press.css %}

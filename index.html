@@ -1,23 +1,15 @@
 ---
 layout: default
-title: Test site 
+title: The Brainstorm Project
 extrajs:
   - index.js
 carousel:
-  - title: Item 1 
-    img: ai-robotics
-    text: >
-      Text for item 1
-      Make it two lines of text.
-    url: projects
-    button: Current projects
-  - title: Inspired by ABRs site.
+  - title: ONR Annual Meeting
     img: brain
     text: >
-      Another 
-      multiline set of text for this item
+      The ONR Annual Meeting will be held on xxx.
     url: team
-    button: Meet the team
+    button: Learn More
 ---
 <div id="index-carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -47,4 +39,17 @@ carousel:
     <span class="sr-only">Next</span>
   </a>
 </div>
-
+<div class="container marketing">
+  <div class="row">
+    {% for project in site.projects limit:3 %}
+    <div class="col-lg-4">
+      <a href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}">
+        <img class="img-circle img-bordered" src="{{ site.baseurl }}/img/{{ project.img }}" alt="" style="width: 140px; height: 140px;">
+      </a>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.pitch }}</p>
+      <p><a class="btn btn-default" href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}" role="button">Learn more &raquo;</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

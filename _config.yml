@@ -12,6 +12,8 @@ baseurl:
 collections:
   projects:
     output: false
+  events:
+    output: false
   team:
     output: false
 

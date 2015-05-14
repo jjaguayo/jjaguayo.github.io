@@ -2,8 +2,6 @@
 name: John Aguayo
 job: Systems Software Developer
 img: john.jpg
-homepage:
+homepage: http://web.stanford.edu/group/brainsinsilicon/JohnAguayo.html
 email: jjaguayo@stanford.edu
 ---
-
-This will be completed in the final version of this site.
