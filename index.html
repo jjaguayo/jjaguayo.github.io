@@ -8,8 +8,8 @@ carousel:
     img: brain
     text: >
       The ONR Annual Meeting will be held on xxx.
-    url: team
-    button: Learn More
+    url: events
+    button: Review the agenda
 ---
 <div id="index-carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -48,7 +48,7 @@ carousel:
       </a>
       <h2>{{ project.title }}</h2>
       <p>{{ project.pitch }}</p>
-      <p><a class="btn btn-default" href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}" role="button">Review the agenda &raquo;</a></p>
+      <p><a class="btn btn-default" href="{{ site.baseurl }}/projects/#{{ project.title | slugify }}" role="button">Learn more &raquo;</a></p>
     </div>
     {% endfor %}
   </div>
